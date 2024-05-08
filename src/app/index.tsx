@@ -4,35 +4,33 @@ import './style/index.scss'
 
 import InputQuery from "../components/input-query";
 
-import {debounce} from "../shared/debounce";
-import {useSearcher} from "./hooks/use-searcher";
 import Filters from "../components/filters";
 import Loader from "../components/loader";
 import MediaContent from "../components/media-content";
+import {useMediaQuery} from "./hooks/use-media-query";
 
 const App = () => {
     const {
-        onChangeFilter,
+        query,
         filters,
-        setQuery,
-        isLoading,
-        data
-    } = useSearcher()
+        setQueryStr,
+        onChangeFilter
+    } = useMediaQuery()
 
     return (
        <div className={'app'}>
            <InputQuery
-               onChange={debounce(setQuery, 500)}
+               onChange={setQueryStr}
            />
            <Filters
                chosenFilters={filters}
                onClickFilter={onChangeFilter}
            />
            <MediaContent
-            media={data}
+            media={query?.response?.data}
            />
            {
-               isLoading &&
+               query.status === 'loading' &&
                <Loader/>
            }
        </div>

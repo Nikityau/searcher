@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import StackGrid from "react-stack-grid";
-import shuffle from 'shuffle-array';
 import {TMedia} from "../../shared/types";
 
 import './style.scss'
@@ -29,7 +28,7 @@ const MediaContent: FC<Props> = (
                     columnWidth={150}
                 >
                     {
-                        shuffle(media).map(m => (
+                       media.map(m => (
                             <Media
                                 key={m.id}
                                 id={m.id}

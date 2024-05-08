@@ -10,6 +10,9 @@ const Audio: FC<Props> = (
         title,
         license
     }) => {
+
+    const last = 20
+
     return (
         <div className={'media__audio'}>
             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +21,7 @@ const Audio: FC<Props> = (
                     fill="black"/>
             </svg>
             <div className={'media__audio-wrapper'}>
-                <span>Испольнитель - {title}</span>
+                <span>Испольнитель - {title?.length > last ? title.substring(0, last) + '...' : title}</span>
                 <span data-license>Лицензия: {license}</span>
             </div>
         </div>

@@ -1,0 +1,25 @@
+.loader {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+
+  z-index: 999;
+
+  img {
+    width: 70px;
+
+    animation: loop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes loop {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
