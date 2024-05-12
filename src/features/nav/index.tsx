@@ -16,18 +16,18 @@ const Nav = () => {
             {
                 isAuth &&
                 <div className={'nav'}>
-                    <NavLink to={'/main'} className={({isActive}) =>  (isActive && 'nav__link_current') || ''}>
+                    <NavLink to={'/searcher/main'} className={({isActive}) =>  (isActive && 'nav__link_current') || ''}>
                         Главная
                     </NavLink>
-                    <NavLink to={'/upload-file'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>
+                    <NavLink to={'/searcher/upload-file'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>
                         Загрузить файл
                     </NavLink>
-                    <NavLink to={'/my-files'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>
+                    <NavLink to={'/searcher/my-files'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>
                         Мои файлы
                     </NavLink>
                     {
                         isAdmin &&
-                        <NavLink to={'/admin-info'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>
+                        <NavLink to={'/searcher/admin-info'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>
                             Статус системы
                         </NavLink>
                     }

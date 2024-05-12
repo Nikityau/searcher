@@ -14,7 +14,7 @@ const User = () => {
     const isUserLoggedIn = user.data !== null;
 
     const authPage = (hash: string = 'login') => {
-        nav('/auth' + `#${hash}`)
+        nav('/searcher/auth' + `#${hash}`)
     }
 
     const logout = () => {

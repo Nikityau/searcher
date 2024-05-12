@@ -10,15 +10,16 @@ import Admin from "../features/admin";
 const AppPages = () => {
     return (
         <Routes>
-            <Route path={'/'} element={<Base/>}>
-                <Route path={'/main'} element={<Main/>} />
-                <Route path={'/auth'} element={<Auth/>}/>
-                <Route path={'/upload-file'} element={<UploadFile/>}/>
-                <Route path={'/my-files'} element={<MyFiles/>}/>
-                <Route path={'/admin-info'} element={<Admin/>}/>
+            <Route path={'/searcher'} element={<Base/>}>
+                <Route path={'main'} element={<Main/>} />
+                <Route path={'auth'} element={<Auth/>}/>
+                <Route path={'upload-file'} element={<UploadFile/>}/>
+                <Route path={'my-files'} element={<MyFiles/>}/>
+                <Route path={'admin-info'} element={<Admin/>}/>
 
-                <Route path={'/'} element={<Navigate to={'main'}/>}/>
+                <Route path={''} element={<Navigate to={'main'}/>}/>
             </Route>
+            <Route path={'/'} element={<Navigate to={'/searcher'}/>}/>
         </Routes>
     );
 };

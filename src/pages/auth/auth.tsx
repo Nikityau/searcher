@@ -28,11 +28,11 @@ const Auth = () => {
                 role: login === 'admin' ? 'admin' : 'user',
             }
         })
-        nav('/main')
+        nav('/searcher/main')
     }
 
     const likeGuest = () => {
-        nav('/main')
+        nav('/searcher/main')
     }
 
     const changeType = () => {
