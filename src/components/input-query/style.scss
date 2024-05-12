@@ -4,16 +4,16 @@
   display: flex;
   justify-content: center;
 
-  padding: 20px;
+  width: 75%;
 
   .input-query__wrapper {
     position: relative;
-
-    width: calc(80%);
+    width: 100%;
   }
 
   input {
     width: calc(100% - 80px);
+
     padding: 20px 40px;
 
     font-family: "Roboto", sans-serif;

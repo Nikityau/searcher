@@ -1,0 +1,21 @@
+.user-data__buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.user-data__user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .user-data__data {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Roboto", sans-serif;
+
+    text-align: right;
+  }
+}

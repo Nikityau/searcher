@@ -2,38 +2,21 @@ import React from "react";
 
 import './style/index.scss'
 
-import InputQuery from "../components/input-query";
-
-import Filters from "../components/filters";
-import Loader from "../components/loader";
-import MediaContent from "../components/media-content";
-import {useMediaQuery} from "./hooks/use-media-query";
+import {BrowserRouter} from "react-router-dom";
+import AppPages from "../pages";
+import {Provider} from "react-redux";
+import {store} from "../store";
 
 const App = () => {
-    const {
-        query,
-        filters,
-        setQueryStr,
-        onChangeFilter
-    } = useMediaQuery()
 
     return (
-       <div className={'app'}>
-           <InputQuery
-               onChange={setQueryStr}
-           />
-           <Filters
-               chosenFilters={filters}
-               onClickFilter={onChangeFilter}
-           />
-           <MediaContent
-            media={query?.response?.data}
-           />
-           {
-               query.status === 'loading' &&
-               <Loader/>
-           }
-       </div>
+        <Provider store={store}>
+            <BrowserRouter>
+                <div className={'app'}>
+                    <AppPages/>
+                </div>
+            </BrowserRouter>
+        </Provider>
     );
 };
 

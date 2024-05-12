@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  padding: 10px 0;
+
+   a {
+     font-family: "Roboto", sans-serif;
+
+     color: #939393;
+   }
+  
+  .nav__link_current {
+    color: #000;
+  }
+}

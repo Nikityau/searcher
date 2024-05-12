@@ -32,21 +32,21 @@ const Media: FC<Props> = (
                     type === 'image' &&
                     <Image
                         preview={preview}
-                        license={license}
+                        license={'нет'}
                     />
                 }
                 {
                     type === 'video' &&
                     <Video
                         preview={preview}
-                        license={license}
+                        license={'нет'}
                     />
                 }
                 {
                     type === 'audio' &&
                     <Audio
                         title={title}
-                        license={license}
+                        license={'нет'}
                     />
                 }
             </div>
