@@ -24,7 +24,6 @@ export const useMediaQuery = () => {
     }, [queryStr])
 
     useEffect(() => {
-        console.log(filters)
         searchByFilters()
     }, [filters]);
 

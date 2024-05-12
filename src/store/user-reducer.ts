@@ -1,10 +1,7 @@
 import produce from "immer";
 
 const ustate = {
-    data: {
-        username: 'user',
-        role: 'user'
-    }
+    data: null
 }
 
 

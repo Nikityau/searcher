@@ -1,0 +1,34 @@
+.admin-page {
+  padding: 20px;
+
+  .graphics {
+    h3 {
+      font-family: "Roboto", sans-serif;
+    }
+  }
+
+  .upload-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .upload-data {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background: #EDEDED;
+
+    border-radius: 7px;
+
+    .button-ui {
+      text-transform: uppercase;
+      text-align: center;
+
+      color: #ae1919;
+      border-color: #ae1919;
+    }
+  }
+}

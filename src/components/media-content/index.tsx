@@ -13,9 +13,6 @@ const MediaContent: FC<Props> = (
     {
         media
     }) => {
-
-
-
     return (
         <div className={'media-content'}>
             {

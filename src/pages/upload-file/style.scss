@@ -1,0 +1,29 @@
+.upload-file {
+  padding: 0 20px;
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .button-ui {
+    width: fit-content;
+  }
+
+  .upload-file__form {
+    margin-top: 50px;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input, textarea {
+      font-family: "Roboto", sans-serif;
+
+      border-radius: 5px;
+      border: 1px solid #939393;
+
+      padding: 10px;
+    }
+  }
+}

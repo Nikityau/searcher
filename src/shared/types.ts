@@ -6,7 +6,7 @@ export type TSearcher = (query: string) => Promise<Array<TMedia> | null>
 
 export interface TMedia {
     id: string,
-    type: TMediaType,
+    type: TMediaType | string,
     preview?: string,
     title?: string,
     subTitle?: string,

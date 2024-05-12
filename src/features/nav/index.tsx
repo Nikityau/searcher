@@ -22,6 +22,9 @@ const Nav = () => {
                     <NavLink to={'/upload-file'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>
                         Загрузить файл
                     </NavLink>
+                    <NavLink to={'/my-files'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>
+                        Мои файлы
+                    </NavLink>
                     {
                         isAdmin &&
                         <NavLink to={'/admin-info'} className={({isActive}) => (isActive && 'nav__link_current') || ''}>

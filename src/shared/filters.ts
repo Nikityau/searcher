@@ -1,6 +1,6 @@
 import {nanoid} from "nanoid";
 
-export type TFilterType = 'image' | 'video' | 'audio' | null
+export type TFilterType = 'image' | 'video' | 'audio' | null | string
 
 export interface TFilter {
     id: string,
